@@ -34,13 +34,9 @@ Este es mi sitio web de portafolio personal, diseñado para mostrar mis proyecto
 
 ## 📸 Captura del sitio
 
-![Preview](assets/images/preview.png) <!-- Cambia el path si tu imagen está en otro lado -->
+![Preview](assets/images/image.png) 
+![Preview](assets/images/image2.png)
 
 ---
 
-## 📥 Instalación local
 
-```bash
-git clone https://github.com/Jasonfuentes/portfolio-jason-fuentes.git
-cd portfolio-jason-fuentes
-# Abre el archivo index.html con tu navegador
