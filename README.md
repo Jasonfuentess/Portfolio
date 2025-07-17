@@ -6,18 +6,25 @@ Este es mi sitio web de portafolio personal, diseñado para mostrar mis proyecto
 
 ## 🔗 Demo en vivo
 
-➡️ [Ver el sitio aquí](https://jasonfuentes.github.io/portfolio-jason-fuentes) *(reemplaza con tu link si usás GitHub Pages u otro)*
+➡️ [Ver el sitio aquí](https://jasonfuentes.github.io/portfolio-jason-fuentes) 
 
 ---
 
 ## 🛠️ Tecnologías utilizadas
 
-- HTML5
-- CSS3
-- JavaScript
-- ScrollReveal
-- Typed.js
-
+- C#.
+- ASP .NET
+- MVC.
+- API REST
+- REACT
+- SQL SERVER
+- FIREBASE
+- JAVA
+- KOTLIN
+- ANDROID STUDIO
+- HTML,CSS,JAVA SCRIPT
+- SWIFT
+- WEB SERVICES
 ---
 
 ## 📂 Estructura del sitio
