@@ -13,19 +13,10 @@ Este es mi sitio web de portafolio personal, diseñado para mostrar mis proyecto
 
 ## 🛠️ Tecnologías utilizadas
 
-- C#.
-- ASP .NET
-- MVC.
-- API REST
-- REACT
-- SQL SERVER
-- FIREBASE
-- JAVA
-- KOTLIN
-- ANDROID STUDIO
-- HTML,CSS,JAVA SCRIPT
-- SWIFT
-- WEB SERVICES
+- HTML
+- CSS 
+- JAVA SCRIPT
+
 ---
 
 ## 📂 Estructura del sitio
