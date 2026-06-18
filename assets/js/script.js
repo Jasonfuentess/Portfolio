@@ -42,8 +42,8 @@ themeBtn.onclick = function () {
 let CVButton = document.querySelector("#downloadCV");
 CVButton.onclick = function () {
   const link = document.createElement("a");
-  link.href = "/assets/pdf/JasonFuentesCV.pdf"; // Ruta al archivo dentro de la carpeta pdf
-  link.download = "JasonFuentesCV.pdf"; // Nombre con el que se descargará
+  link.href = "/assets/pdf/JasonFuentesReyesCV.pdf"; // Ruta al archivo dentro de la carpeta pdf
+  link.download = "JasonFuentesReyesCV.pdf"; // Nombre con el que se descargará
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
