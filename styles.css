@@ -131,6 +131,50 @@ h2 { font-size: clamp(48px, 6.1vw, 86px); line-height: .94; letter-spacing: -.06
 .api-window-top code { color: #c4cbd3; }
 .api-window-top b { color: #7ef7c9; font-size: 10px; }
 .api-window pre { margin: 0; padding: 30px 28px 34px; color: #a8e8ff; font: 14px/1.8 "SFMono-Regular", Consolas, monospace; background: linear-gradient(180deg,#0f141a,#0b0f13); }
+
+/* GlowBook project preview — custom-built so the demo can stay private. */
+.glowbook-preview {
+  padding: 24px;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(184,255,87,.09), transparent 32%),
+    radial-gradient(circle at 100% 100%, rgba(124,220,255,.08), transparent 38%),
+    #0d1010;
+}
+.glowbook-app {
+  position: absolute; inset: 28px; display: grid; grid-template-columns: 74px 1fr;
+  border: 1px solid rgba(255,255,255,.12); border-radius: 16px; overflow: hidden;
+  background: #f5f6f4; color: #141815; box-shadow: 0 28px 60px rgba(0,0,0,.38);
+  transform: perspective(900px) rotateX(2deg) rotateY(-2deg); transition: transform .7s var(--ease);
+}
+.project-card:hover .glowbook-app { transform: perspective(900px) rotateX(0) rotateY(0) scale(1.015); }
+.glowbook-sidebar { padding: 14px 10px; background: #171b18; color: #fff; }
+.glowbook-logo { display: grid; place-items: center; gap: 6px; font-size: 8px; }
+.glowbook-logo span { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 9px; background: var(--accent); color: #111; font-size: 13px; font-weight: 900; }
+.glowbook-logo b { font-size: 8px; letter-spacing: -.02em; }
+.glowbook-nav { margin-top: 28px; display: grid; gap: 14px; place-items: center; }
+.glowbook-nav i { display: block; width: 25px; height: 7px; border-radius: 999px; background: rgba(255,255,255,.16); }
+.glowbook-nav i.active { background: var(--accent); }
+.glowbook-main { min-width: 0; padding: 16px; background: #f7f8f6; }
+.glowbook-topbar { display: flex; align-items: center; justify-content: space-between; font-size: 12px; font-weight: 800; }
+.glowbook-topbar > div { display: flex; gap: 6px; }
+.glowbook-topbar i { width: 22px; height: 22px; display: block; border-radius: 50%; background: #e4e8e2; }
+.glowbook-metrics { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; margin-top: 14px; }
+.glowbook-metrics > div { padding: 10px; border: 1px solid #e3e6e1; border-radius: 10px; background: #fff; }
+.glowbook-metrics small { display: block; color: #747b75; font-size: 7px; }
+.glowbook-metrics strong { display: block; margin: 4px 0 1px; font-size: 15px; }
+.glowbook-metrics span { color: #929792; font-size: 6px; }
+.glowbook-content { display: grid; grid-template-columns: 1.6fr .7fr; gap: 8px; margin-top: 9px; }
+.glowbook-calendar, .glowbook-panel { border: 1px solid #e3e6e1; border-radius: 10px; background: #fff; padding: 9px; }
+.calendar-head { display: flex; justify-content: space-between; align-items: center; font-size: 8px; }
+.calendar-head span { padding: 3px 6px; border-radius: 999px; background: #edf0ec; color: #70766f; font-size: 6px; }
+.calendar-grid { display: grid; grid-template-columns: repeat(4,1fr); grid-auto-rows: 18px; gap: 4px; margin-top: 9px; }
+.calendar-grid i { display: block; border-radius: 4px; background: #edf0ec; }
+.calendar-grid i.booked { background: rgba(184,255,87,.85); }
+.calendar-grid i.tall { grid-row: span 2; }
+.glowbook-panel { display: grid; align-content: start; gap: 8px; font-size: 8px; }
+.glowbook-panel span { height: 24px; border-radius: 6px; background: #eef1ed; }
+.private-code { color: #85827b; font-size: 11px; font-weight: 700; padding-bottom: 2px; }
+
 .all-projects { margin-top: 22px; border: 1px solid var(--line); min-height: 90px; padding: 0 26px; border-radius: 16px; display: flex; align-items: center; justify-content: space-between; transition: background .25s ease, border-color .25s ease; }
 .all-projects:hover { background: #111; border-color: var(--line-strong); }
 .all-projects span { font-size: 14px; color: #cecbc4; }
