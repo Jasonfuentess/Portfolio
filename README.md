@@ -1,41 +1,20 @@
-# 💼 Jason Fuentes | Personal Portfolio
-# Full Responsive Modern Personal Portfolio, single page with Dark Mode
+# Jason Fuentes Portfolio
 
-Este es mi sitio web de portafolio personal, diseñado para mostrar mis proyectos, habilidades y experiencia como desarrollador Full Stack especializado en aplicaciones web y móviles.
+A responsive single-page portfolio built with HTML, CSS and JavaScript for easy deployment to GitHub Pages.
 
----
+## Files
 
-## 🔗 Demo en vivo
+- `index.html` — portfolio structure and content
+- `styles.css` — responsive layout, animations and visual system
+- `script.js` — mobile navigation, scroll reveal and cursor glow
+- `assets/Jason-Fuentes-Resume.pdf` — downloadable résumé
 
-➡️ [Ver el sitio aquí](https://jasonfuentes.github.io/portfolio-jason-fuentes) 
+## Deploy to GitHub Pages
 
----
+1. Create a new repository (for example `portfolio-2026`).
+2. Upload all files from this folder to the repository root.
+3. In GitHub, open **Settings → Pages**.
+4. Under **Build and deployment**, choose **Deploy from a branch**.
+5. Select `main` and `/ (root)`, then save.
 
-## 🛠️ Tecnologías utilizadas
-
-- HTML
-- CSS 
-- JAVA SCRIPT
-
----
-
-## 📂 Estructura del sitio
-
-- `Home`: presentación y animación de títulos
-- `About`: descripción personal y habilidades técnicas
-- `Services`: lista de servicios ofrecidos
-- `Portfolio`: proyectos destacados con filtros
-- `Testimonial`: opiniones de usuarios
-- `Contact`: formulario para contacto directo
-- `CV`: botón de descarga para mi currículum
-
----
-
-## 📸 Captura del sitio
-
-![Preview](assets/images/image.png) 
-![Preview](assets/images/image2.png)
-
----
-
-
+The portfolio uses public project screenshots hosted on GitHub, so those project preview images require an internet connection.

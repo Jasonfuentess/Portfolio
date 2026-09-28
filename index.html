@@ -1,443 +1,273 @@
-<!DOCTYPE html>
-<html lang="en"> 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ==================================
-                   custom CSS
-    ==================================== -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- ==================================
-                   Remix Icons
-    ==================================== -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <!-- ==================================
-                    NAVBAR
-    ==================================== -->
-    <nav>
-      <div class="container nav-container">
-        <a href="index.html" class="logo">Jason<span>Fuentes</span></a>
-        <ul class="navlist">
-          <li><a href="#home">home</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#services">services</a></li>
-          <li><a href="#portfolio">portfolio</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
-        <div class="nav-icons">
-          <div id="theme-btn" class="ri-moon-line"></div>
-          <div id="menu-btn" class="ri-menu-line"></div>
-        </div>
-      </div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="description" content="Jason Fuentes — Full-Stack Web & Mobile Developer based in Calgary, Alberta. Portfolio featuring React, TypeScript, ASP.NET Core, C#, Android and API projects." />
+  <meta property="og:title" content="Jason Fuentes — Full-Stack Developer" />
+  <meta property="og:description" content="Web and mobile developer building polished interfaces, scalable APIs and practical digital products." />
+  <title>Jason Fuentes — Full-Stack Developer</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Jason Fuentes home">
+      <span class="brand-mark">JF</span>
+      <span class="brand-name">Jason Fuentes</span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-github" href="https://github.com/Jasonfuentess?tab=repositories" target="_blank" rel="noreferrer">GitHub ↗</a>
     </nav>
-    <!-- ==================================
-                  HOME SECTION
-    ==================================== -->
-    <section class="home" id="home">
-      <div class="container home-container">
-        <div class="left">
-          <h3>Hello, It's Me</h3>
-          <h1><span>Jason</span></h1>
-          <!-- you can edit `multiple-text` into ( /assets/js/script.js ), then search and edit `strings` in TYPED Js  -->
-          <h3>And I'm a <span class="multiple-text"></span></h3>
-          <p>
-  I'm a passionate Full Stack Developer with 3+ years of experience building web and mobile applications. I specialize in .NET, ASP.NET, React, Android Studio, and SQL Server. I bring innovative ideas to life with clean code and user-friendly design.
-          </p>
-          <div class="social-icons-container">
-            <div class="social-icons">
-              <a href="https://github.com/Jasonfuentess"><i class="ri-github-line"></i></a>
-              <a href="https://www.linkedin.com/in/jason-fuentes-6504a725b"><i class="ri-linkedin-line"></i></a>
-            </div>
-            <button class="btn overlay" id="btn">
-              <span> Hire me</span>
-            </button>
-          </div>
-        </div>
-        <div class="right">
-          <!-- add your home or profile photo in src from assets/images/  -->
-          <img src="assets/images/about.png" alt="" />
-        </div>
-      </div>
-    </section>
-    <!-- ==================================
-                  ABOUT SECTION
-    ==================================== -->
-    <section class="about" id="about">
-      <div class="container about-container">
-        <div class="left">
-          <!-- add your photo in src for About page from assets/images/ -->
-          <img src="assets/images/profile.png" alt="" />
-        </div>
-        <div class="right">
-          <div class="title">
-            <h2>About <span>Me</span></h2>
-          </div>
-          <h3>
-            I'm a FullStack Web Developer
-          </h3>
-          <p>
-  I’m Jason Fuentes, a web and mobile developer with a solid foundation in technologies like C#, ASP.NET MVC, React, Kotlin, Swift, and Firebase. I've built systems for internal communication, payroll viewing, and telecom service management across platforms. I’m always looking to enhance user experience through clean, scalable solutions.
-          </p>
-          <button class="btn overlay" id="downloadCV">
-            <span>Download CV</span>
-          </button>
-          <div class="container">
-            <div class="progress-bar">
-              <div class="outer-circle">
-                <div class="inner-circle">
-                  <div class="html-number number">
-                    <h4>C#</h4>
-                  </div>
-                </div>
-              </div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                width="160px"
-                height="160px"
-              >
-                <defs>
-                  <linearGradient id="GradientColor">
-                    <stop offset="0%" stop-color="#9b2fff" />
-                    <stop offset="100%" stop-color="#ff2f48" />
-                  </linearGradient>
-                </defs>
-                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-              </svg>
-            </div>
-                 <div class="progress-bar">
-              <div class="outer-circle">
-                <div class="inner-circle">
-                  <div class="html-number number">
-                    <h4> .NET </h4>
-                  </div>
-                </div>
-              </div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                width="160px"
-                height="160px"
-              >
-                <defs>
-                  <linearGradient id="GradientColor">
-                    <stop offset="0%" stop-color="#9b2fff" />
-                    <stop offset="100%" stop-color="#ff2f48" />
-                  </linearGradient>
-                </defs>
-                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-              </svg>
-            </div>
-                 <div class="progress-bar">
-              <div class="outer-circle">
-                <div class="inner-circle">
-                  <div class="html-number number">
-                    <h4>SQL SERVER</h4>
-                  </div>
-                </div>
-              </div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                width="160px"
-                height="160px"
-              >
-                <defs>
-                  <linearGradient id="GradientColor">
-                    <stop offset="0%" stop-color="#9b2fff" />
-                    <stop offset="100%" stop-color="#ff2f48" />
-                  </linearGradient>
-                </defs>
-                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-              </svg>
-            </div>
-                 <div class="progress-bar">
-              <div class="outer-circle">
-                <div class="inner-circle">
-                  <div class="html-number number">
-                    <h4> SWIFT</h4>
-                  </div>
-                </div>
-              </div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                width="160px"
-                height="160px"
-              >
-                <defs>
-                  <linearGradient id="GradientColor">
-                    <stop offset="0%" stop-color="#9b2fff" />
-                    <stop offset="100%" stop-color="#ff2f48" />
-                  </linearGradient>
-                </defs>
-                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-              </svg>
-            </div>
-             <div class="progress-bar">
-              <div class="outer-circle">
-                <div class="inner-circle">
-                  <div class="html-number number">
-                    <h4>WEB SERVICES</h4>
-                  </div>
-                </div>
-              </div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                width="160px"
-                height="160px"
-              >
-                <defs>
-                  <linearGradient id="GradientColor">
-                    <stop offset="0%" stop-color="#9b2fff" />
-                    <stop offset="100%" stop-color="#ff2f48" />
-                  </linearGradient>
-                </defs>
-                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-              </svg>
-            </div>
-            <div class="progress-bar">
-              <div class="outer-circle">
-                <div class="inner-circle">
-                  <div class="html-number number">
-                    <h4>NODE JS</h4>
-                  </div>
-                </div>
-              </div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                width="160px"
-                height="160px"
-              >
-                <defs>
-                  <linearGradient id="GradientColor">
-                    <stop offset="0%" stop-color="#9b2fff" />
-                    <stop offset="100%" stop-color="#ff2f48" />
-                  </linearGradient>
-                </defs>
-                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ==================================
-                SERVICE SECTION
-    ==================================== -->
-    <section class="services" id="services">
-      <div class="title">
-        <h2>My  <span>Services</span></h2>
-      </div>
-      <div class="container services-container">
-        <div class="box overlay content-1">
-          <div class="content ">
-            <i class="ri-html5-fill"></i>
-            <h4>Web Developement</h4>
-            <button class="btn" id="btn2">Book Service</button>
-          </div>
-        </div>
-        <div class="box overlay content-1">
-          <div class="content ">
-            <i class="ri-css3-fill"></i>
-            <h4>Web Design</h4>
-            <button class="btn" id="btn2">Book Service</button>
-          </div>
-        </div>
-        <div class="box overlay content-1">
-          <div class="content ">
-            <i class="ri-javascript-fill"></i>
-            <h4>App Developement</h4>
-            <button class="btn" id="btn2">Book Service</button>
-          </div>
-          </div>
-          <div class="box overlay content-2">
-            <div class="content ">
-              <i class="ri-bug-fill"></i>
-              <h4>Bug Fixing</h4>
-              <button class="btn" id="btn2">Book Service</button>
-            </div>
-          </div>
-          <div class="box overlay content-2">
-            <div class="content ">
-              <i class="ri-stack-fill"></i>
-              <h4>Full Stack</h4>
-              <button class="btn" id="btn2">Book Service</button>
-            </div>
-          </div>
-          <div class="box overlay content-2">
-            <div class="content ">
-              <i class="ri-paint-fill"></i>
-              <h4>Graphic Design</h4>
-              <button class="btn" id="btn2">Book Service</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-     <!-- ==================================
-                PORTFOLIO SECTION
-    ==================================== -->
-    <section class="portfolio" id="portfolio">
-        <div class="title">
-            <h2>Latest <span>Project</span></h2>
-        </div>
-        <div class="container portfolio-container">
-            <div class="portfolio-buttons" >
-                <button class="btn portfolio-tab active" onclick="tabOpen('all')">
-                    All</button>
-                <button class="btn portfolio-tab " onclick="tabOpen('webdevelop')">
-                    Web Develop</button>
-                <button class="btn portfolio-tab " onclick="tabOpen('webdesign')">
-                    Web Design</button>
-                
-            </div>
-            <div class="tab-content active-content" id="all">
-                <div class="image"> 
-                <a href="https://jasonfuentess.github.io/BazarYessi/#" target="_blank">
-                <img src="assets/images/bazaryessi.png" alt="">
-                </a>
-              </div>
-                <div class="image">
-                   <a href="https://jasonfuentess.github.io/iMovie/" target="_blank">
-                <img src="assets/images/movies.png" alt="">
-                </a>
-                </div>
-                <div class="image">
-                 <a href="https://jasonfuentess.github.io/business-admin-dashboard/" target="_blank">
-                  <img src="assets/images/img3.png" alt="">
-                  </a>
-                </div>
-                <div class="image"><img src="assets/images/img9.png" alt=""></div>
-                <div class="image"><img src="assets/images/img12.png" alt=""></div>
-                <div class="image"><img src="assets/images/img10.png" alt=""></div>
-            </div>
-            <div class="tab-content" id="webdevelop">
-                <!-- add your image or mockup project in src for tab-content webdevelop from assets/images/ -->
-                <div class="image">
-                 <a href="https://jasonfuentess.github.io/BazarYessi/#" target="_blank">
-                <img src="assets/images/bazaryessi.png" alt="">
-                </a>
-                </div>
-                <div class="image">
-                  <a href="https://jasonfuentess.github.io/business-admin-dashboard/" target="_blank">
-                  <img src="assets/images/img3.png" alt="">
-                  </a>
-                </div>
-                <div class="image"><img src="assets/images/img4.png" alt=""></div>
-                <div class="image"><img src="assets/images/img5.png" alt=""></div>
-                <div class="image"><img src="assets/images/img6.png" alt=""></div>
-                <div class="image"><img src="assets/images/img7.png" alt=""></div>
-            </div>
-            <div class="tab-content" id="webdesign">
-                <!-- add your image or mockup project in src for tab-content webdesign from assets/images -->
-                <div class="image">
-                   <a href="https://jasonfuentess.github.io/iMovie/" target="_blank">
-                <img src="assets/images/movies.png" alt="">
-                </a>
-                </div>
-                <div class="image"><img src="assets/images/img9.png" alt=""></div>
-                <div class="image"><img src="assets/images/img10.png" alt=""></div>
-                <div class="image"><img src="assets/images/img11.png" alt=""></div>
-                <div class="image"><img src="assets/images/img12.png" alt=""></div>
-                <div class="image"><img src="assets/images/img13.png" alt=""></div>
-            </div>
-            <div class="tab-content" id="appdevelop">
-                <!-- add your image or mockup project in src for tab-content appdevelop from assets/images -->
-                <div class="image"><img src="assets/images/portfolio (19).jpg" alt=""></div>
-                <div class="image"><img src="assets/images/portfolio (4).jpg" alt=""></div>
-                <div class="image"><img src="assets/images/portfolio (14).jpg" alt=""></div>
-                <div class="image"><img src="assets/images/portfolio (18).jpg" alt=""></div>
-                <div class="image"><img src="assets/images/portfolio (15).jpg" alt=""></div>
-                <div class="image"><img src="assets/images/portfolio (2).jpg" alt=""></div>
-            </div>
-        </div>
-    </section>
-   
-   <!-- ==================================
-                CONTACT SECTION
-   ==================================== -->
-   <section class="contact" id="contact">
-    <div class="title">
-        <h2>Contact <span>Me</span></h2>
-    </div>
-    <div class="contact-content">
-        <div class="row">
-          <div class="box">
-              <div class="box-icon">
-                  <i class="ri-home-line"></i>
-              </div>
-              <div class="box-info">
-                  <h4>Address</h4>
-                  <span>Calgary, Canada</span>
-              </div>
-          </div>
-          <div class="box">
-              <div class="box-icon">
-                  <i class="ri-phone-line"></i>
-              </div>
-              <div class="box-info">
-                  <h4>Phone Number</h4>
-                  <span>+1 4039903016</span>
-              </div>
-          </div>
-          <div class="box">
-              <div class="box-icon">
-                  <i class="ri-mail-line"></i>
-              </div>
-              <div class="box-info">
-                  <h4>Email Address</h4>
-                  <span>jasonfuentes_11@icloud.com</span>
-              </div>
-          </div>
-        </div>
-        <!-- 
-        <div class="row">
-            <form action="" class="contact-form">
-                <div class="form-box">
-                    <input type="text" placeholder="Enter Your Name" required>
-                </div>
-                <div class="form-box">
-                    <input type="email" placeholder="Enter Your Email" required>
-                </div>
-                <div class="form-box">
-                    <input type="text" placeholder="Email Subject" required>
-                </div>
-                <div class="form-box">
-                    <textarea name="Message" id="" cols="10" rows="10" placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit" class="btn overlay">
-                    <span>Send Message</span>
-                </button>
-            </form>
-        </div>
-        -->
-    </div>
-   </section>
-   <div class="copyright">
-    <p>Copyright &copy; 2024 by Jason | All right Reserved.</p>
-   </div>
+  </header>
 
+  <main>
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <div class="availability"><span class="availability-dot"></span> Calgary, Alberta · Open to opportunities</div>
+        <p class="eyebrow">FULL-STACK WEB & MOBILE DEVELOPER</p>
+        <h1 id="hero-title">I turn ideas into<br><span>working products.</span></h1>
+        <p class="hero-lead">I build responsive web experiences, mobile applications and clean backend services with a practical focus on performance, usability and maintainable code.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <span>↘</span></a>
+          <a class="button button-ghost" href="assets/Jason-Fuentes-Resume.pdf" target="_blank">Download résumé <span>↗</span></a>
+        </div>
+      </div>
 
-    <!-- ==================================
-                   Scroll Reveal
-    ==================================== -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- ==================================
-                   Typed Js
-    ==================================== -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- ==================================
-                   custom Js
-    ==================================== -->
-    <script src="assets/js/script.js"></script>
-  </body>
+      <div class="hero-aside reveal">
+        <div class="terminal-card" aria-label="Developer profile">
+          <div class="terminal-top"><span></span><span></span><span></span></div>
+          <div class="terminal-code">
+            <p><span class="code-muted">01</span> <span class="code-keyword">const</span> developer = {</p>
+            <p><span class="code-muted">02</span> &nbsp;&nbsp;name: <span class="code-string">"Jason Fuentes"</span>,</p>
+            <p><span class="code-muted">03</span> &nbsp;&nbsp;focus: [<span class="code-string">"Web"</span>, <span class="code-string">"Mobile"</span>, <span class="code-string">"APIs"</span>],</p>
+            <p><span class="code-muted">04</span> &nbsp;&nbsp;stack: [<span class="code-string">".NET"</span>, <span class="code-string">"React"</span>, <span class="code-string">"Android"</span>],</p>
+            <p><span class="code-muted">05</span> &nbsp;&nbsp;mindset: <span class="code-string">"build → test → improve"</span></p>
+            <p><span class="code-muted">06</span> };</p>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div><strong>2+</strong><span>years building software</span></div>
+          <div><strong>4</strong><span>featured projects</span></div>
+          <div><strong>EN / ES</strong><span>fluent / native</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Technology stack">
+      <div class="ticker-track">
+        <span>C#</span><i>✦</i><span>ASP.NET Core</span><i>✦</i><span>React</span><i>✦</i><span>TypeScript</span><i>✦</i><span>SQL Server</span><i>✦</i><span>Kotlin</span><i>✦</i><span>React Native</span><i>✦</i><span>Firebase</span><i>✦</i>
+        <span>C#</span><i>✦</i><span>ASP.NET Core</span><i>✦</i><span>React</span><i>✦</i><span>TypeScript</span><i>✦</i><span>SQL Server</span><i>✦</i><span>Kotlin</span><i>✦</i><span>React Native</span><i>✦</i><span>Firebase</span><i>✦</i>
+      </div>
+    </section>
+
+    <section class="work section-shell" id="work" aria-labelledby="work-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">SELECTED WORK / 2025—2026</p>
+          <h2 id="work-title">Projects built to be<br><span>used, not just seen.</span></h2>
+        </div>
+        <p class="heading-note">A mix of production-style frontends, full-stack architecture, responsive web design and API development.</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card project-featured reveal">
+          <a class="project-visual" href="https://jasonfuentess.github.io/SalmexCarpentry/" target="_blank" rel="noreferrer" aria-label="Open Salmex Carpentry live website">
+            <img src="https://jasonfuentess.github.io/SalmexCarpentry/architecture.png" alt="Salmex Carpentry website project" loading="lazy" />
+            <div class="project-overlay"><span>LIVE SITE ↗</span></div>
+          </a>
+          <div class="project-info">
+            <div class="project-number">01</div>
+            <div>
+              <p class="project-type">CLIENT-STYLE WEBSITE · FRONTEND</p>
+              <h3>Salmex Carpentry</h3>
+              <p>A premium, responsive construction website for a Calgary framing company, designed around strong visual hierarchy, service credibility and direct contact conversion.</p>
+              <div class="chips"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive UI</span></div>
+              <div class="project-links">
+                <a href="https://jasonfuentess.github.io/SalmexCarpentry/" target="_blank" rel="noreferrer">Live demo ↗</a>
+                <a href="https://github.com/Jasonfuentess/SalmexCarpentry" target="_blank" rel="noreferrer">Source ↗</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <a class="project-visual" href="https://jasonfuentess.github.io/business-admin-dashboard/" target="_blank" rel="noreferrer" aria-label="Open AdminFlow live website">
+            <img src="https://raw.githubusercontent.com/Jasonfuentess/business-admin-dashboard/main/screenshots/dashboard.png" alt="AdminFlow dashboard project" loading="lazy" />
+            <div class="project-overlay"><span>LIVE SITE ↗</span></div>
+          </a>
+          <div class="project-info">
+            <div class="project-number">02</div>
+            <div>
+              <p class="project-type">BUSINESS DASHBOARD · REACT</p>
+              <h3>AdminFlow</h3>
+              <p>A realistic business administration dashboard with KPIs, revenue visualization, customer and order management, search, filters, pagination and dark/light themes.</p>
+              <div class="chips"><span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>Recharts</span><span>Vite</span></div>
+              <div class="project-links">
+                <a href="https://jasonfuentess.github.io/business-admin-dashboard/" target="_blank" rel="noreferrer">Live demo ↗</a>
+                <a href="https://github.com/Jasonfuentess/business-admin-dashboard" target="_blank" rel="noreferrer">Source ↗</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <a class="project-visual api-preview" href="https://github.com/Jasonfuentess/AspNetCoreMvcApi" target="_blank" rel="noreferrer" aria-label="Open GeoArticle API repository">
+            <div class="api-window">
+              <div class="api-window-top"><span>GET</span><code>/api/articles</code><b>200 OK</b></div>
+              <pre>{
+  "id": 24,
+  "city_name": "Calgary",
+  "lat": 51.0447,
+  "long": -114.0719
+}</pre>
+            </div>
+            <div class="project-overlay"><span>VIEW SOURCE ↗</span></div>
+          </a>
+          <div class="project-info">
+            <div class="project-number">03</div>
+            <div>
+              <p class="project-type">REST API · BACKEND</p>
+              <h3>GeoArticle API</h3>
+              <p>A multi-layer ASP.NET Core REST API using Clean Architecture principles to manage geo-referenced articles with complete CRUD operations and separated business/data layers.</p>
+              <div class="chips"><span>C#</span><span>ASP.NET Core</span><span>EF Core</span><span>SQL Server</span><span>Postman</span></div>
+              <div class="project-links">
+                <a href="https://github.com/Jasonfuentess/AspNetCoreMvcApi" target="_blank" rel="noreferrer">Source ↗</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <a class="project-visual" href="https://jasonfuentess.github.io/iMovie/" target="_blank" rel="noreferrer" aria-label="Open iMovies live website">
+            <img src="https://raw.githubusercontent.com/Jasonfuentess/iMovie/main/screenshots/preview.png" alt="iMovies cinematic landing page" loading="lazy" />
+            <div class="project-overlay"><span>LIVE SITE ↗</span></div>
+          </a>
+          <div class="project-info">
+            <div class="project-number">04</div>
+            <div>
+              <p class="project-type">LANDING PAGE · UI/UX</p>
+              <h3>iMovies</h3>
+              <p>A responsive cinematic landing page featuring a full-width hero, movie metadata, trailer interaction, trending content carousel and polished entertainment-focused UI.</p>
+              <div class="chips"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Font Awesome</span></div>
+              <div class="project-links">
+                <a href="https://jasonfuentess.github.io/iMovie/" target="_blank" rel="noreferrer">Live demo ↗</a>
+                <a href="https://github.com/Jasonfuentess/iMovie" target="_blank" rel="noreferrer">Source ↗</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <a class="all-projects reveal" href="https://github.com/Jasonfuentess?tab=repositories" target="_blank" rel="noreferrer">
+        <span>See more experiments and repositories on GitHub</span><strong>↗</strong>
+      </a>
+    </section>
+
+    <section class="experience section-shell" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">EXPERIENCE</p>
+          <h2 id="experience-title">Software, support and<br><span>real-world problem solving.</span></h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-date">2023 — 2025</div>
+          <div class="timeline-role"><span>01</span><h3>Development Analyst</h3><p>Atento El Salvador</p></div>
+          <div class="timeline-copy">Built and maintained web and mobile applications for customer and employee information using C#, ASP.NET MVC, REST services, SQL Server, React, JavaScript and Redux. Worked across Android and cross-platform mobile technologies including Kotlin, Java, Xamarin, Swift, React Native and Firebase push notifications.</div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">2022</div>
+          <div class="timeline-role"><span>02</span><h3>Development Internship</h3><p>Movistar</p></div>
+          <div class="timeline-copy">Worked in the Altamira / Online Rater area and contributed to a Java Spring Boot application consuming a WSDL service to improve availability of Tuxedo services.</div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">2022</div>
+          <div class="timeline-role"><span>03</span><h3>IT Support · Social Service</h3><p>Environmental Health Department</p></div>
+          <div class="timeline-copy">Provided support for network, application and permission issues while also building an internal Java Android application with social feed and chat capabilities backed by MySQL.</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section-shell" id="about" aria-labelledby="about-title">
+      <div class="about-intro reveal">
+        <p class="eyebrow">ABOUT ME</p>
+        <h2 id="about-title">Developer across the<br><span>whole product surface.</span></h2>
+        <p>I’m a web and mobile developer with experience across frontend interfaces, backend services, databases and native/cross-platform mobile development. I enjoy taking a feature from idea to implementation and making the final experience feel clear, useful and polished.</p>
+      </div>
+
+      <div class="skill-grid reveal">
+        <div class="skill-column">
+          <span>01 / WEB</span>
+          <strong>React</strong><strong>TypeScript</strong><strong>JavaScript</strong><strong>HTML / CSS</strong><strong>Redux</strong>
+        </div>
+        <div class="skill-column">
+          <span>02 / BACKEND</span>
+          <strong>C# / .NET</strong><strong>ASP.NET MVC / Core</strong><strong>REST APIs</strong><strong>SQL Server</strong><strong>MySQL</strong>
+        </div>
+        <div class="skill-column">
+          <span>03 / MOBILE</span>
+          <strong>Kotlin</strong><strong>Java</strong><strong>Android Studio</strong><strong>React Native</strong><strong>Firebase</strong>
+        </div>
+      </div>
+
+      <div class="education-grid reveal">
+        <div class="education-card">
+          <span>EDUCATION</span>
+          <h3>Bachelor’s Degree in Mobile Application Development</h3>
+          <p>Don Bosco · 2019 — 2022</p>
+        </div>
+        <div class="education-card">
+          <span>COURSE</span>
+          <h3>Front-End Web UI Frameworks and Tools: Bootstrap 4</h3>
+          <p>Coursera · 2023</p>
+        </div>
+        <div class="education-card language-card">
+          <span>LANGUAGES</span>
+          <h3>English <small>Fluent</small></h3>
+          <h3>Spanish <small>Native</small></h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
+      <div class="contact-inner reveal">
+        <p class="eyebrow">LET’S BUILD SOMETHING</p>
+        <h2 id="contact-title">Have a role, project<br>or idea in mind?</h2>
+        <p class="contact-lead">I’m open to software development opportunities where I can contribute across web, mobile and backend development.</p>
+        <a class="contact-email" href="mailto:jasonfuentes_11@icloud.com">jasonfuentes_11@icloud.com <span>↗</span></a>
+        <div class="contact-meta">
+          <a href="tel:+14039903016">+1 403 990 3016</a>
+          <span>Calgary, Alberta</span>
+          <a href="https://www.linkedin.com/in/jason-fuentes-6504a725b" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="https://github.com/Jasonfuentess" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-shell">
+    <div><span class="brand-mark">JF</span><span>Jason Fuentes · Full-Stack Developer</span></div>
+    <div><span>© <span id="year"></span></span><a href="#top">Back to top ↑</a></div>
+  </footer>
+</body>
 </html>
